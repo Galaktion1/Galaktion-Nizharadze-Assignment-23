@@ -13,9 +13,9 @@
 		9A9D736A28ABEC8300602A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D736828ABEC8300602A77 /* Main.storyboard */; };
 		9A9D736C28ABEC8B00602A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D736B28ABEC8B00602A77 /* Assets.xcassets */; };
 		9A9D736F28ABEC8B00602A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D736D28ABEC8B00602A77 /* LaunchScreen.storyboard */; };
-		9A9D737A28ABECBC00602A77 /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D737728ABECBC00602A77 /* DetailsModel.swift */; };
-		9A9D737B28ABECBC00602A77 /* FetchMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D737828ABECBC00602A77 /* FetchMovie.swift */; };
-		9A9D737C28ABECBC00602A77 /* TopRatedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D737928ABECBC00602A77 /* TopRatedModel.swift */; };
+		9AC5A85B28B21EB30052C4A3 /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5A85A28B21EB30052C4A3 /* DetailsModel.swift */; };
+		9AC5A85D28B21EBF0052C4A3 /* FetchMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5A85C28B21EBF0052C4A3 /* FetchMovie.swift */; };
+		9AC5A85F28B21ED50052C4A3 /* TopRatedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5A85E28B21ED50052C4A3 /* TopRatedModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		9A9D736B28ABEC8B00602A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A9D736E28ABEC8B00602A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A9D737028ABEC8B00602A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A9D737728ABECBC00602A77 /* DetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
-		9A9D737828ABECBC00602A77 /* FetchMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchMovie.swift; sourceTree = "<group>"; };
-		9A9D737928ABECBC00602A77 /* TopRatedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopRatedModel.swift; sourceTree = "<group>"; };
+		9AC5A85A28B21EB30052C4A3 /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		9AC5A85C28B21EBF0052C4A3 /* FetchMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovie.swift; sourceTree = "<group>"; };
+		9AC5A85E28B21ED50052C4A3 /* TopRatedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,9 @@
 		9A9D736128ABEC8200602A77 /* Galaktion Nizharadze, ASsignment #23 */ = {
 			isa = PBXGroup;
 			children = (
+				9AC5A85928B21E950052C4A3 /* APIService */,
 				9A9D736228ABEC8200602A77 /* AppDelegate.swift */,
 				9A9D736428ABEC8300602A77 /* SceneDelegate.swift */,
-				9A9D737628ABECBC00602A77 /* APIService */,
 				9A9D736628ABEC8300602A77 /* ViewController.swift */,
 				9A9D736828ABEC8300602A77 /* Main.storyboard */,
 				9A9D736B28ABEC8B00602A77 /* Assets.xcassets */,
@@ -74,15 +74,14 @@
 			path = "Galaktion Nizharadze, ASsignment #23";
 			sourceTree = "<group>";
 		};
-		9A9D737628ABECBC00602A77 /* APIService */ = {
+		9AC5A85928B21E950052C4A3 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
-				9A9D737728ABECBC00602A77 /* DetailsModel.swift */,
-				9A9D737828ABECBC00602A77 /* FetchMovie.swift */,
-				9A9D737928ABECBC00602A77 /* TopRatedModel.swift */,
+				9AC5A85A28B21EB30052C4A3 /* DetailsModel.swift */,
+				9AC5A85C28B21EBF0052C4A3 /* FetchMovie.swift */,
+				9AC5A85E28B21ED50052C4A3 /* TopRatedModel.swift */,
 			);
-			name = APIService;
-			path = "../../Galaktion-Nizharadze-Assignment-22/Galaktion Nizharadze, Assignment #22/APIService";
+			path = APIService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,10 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9D737C28ABECBC00602A77 /* TopRatedModel.swift in Sources */,
-				9A9D737A28ABECBC00602A77 /* DetailsModel.swift in Sources */,
+				9AC5A85F28B21ED50052C4A3 /* TopRatedModel.swift in Sources */,
+				9AC5A85B28B21EB30052C4A3 /* DetailsModel.swift in Sources */,
 				9A9D736728ABEC8300602A77 /* ViewController.swift in Sources */,
-				9A9D737B28ABECBC00602A77 /* FetchMovie.swift in Sources */,
+				9AC5A85D28B21EBF0052C4A3 /* FetchMovie.swift in Sources */,
 				9A9D736328ABEC8300602A77 /* AppDelegate.swift in Sources */,
 				9A9D736528ABEC8300602A77 /* SceneDelegate.swift in Sources */,
 			);

@@ -17,7 +17,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
 //        way1()
         way2()
   
@@ -35,8 +34,10 @@ class ViewController: UIViewController {
             self.semaphore.wait()
             self.tvShowFetch.fetchMovies(from: .topRated, afterID: nil) { (result: Result<TVShows, Error>) in
                 switch result {
-                case .success(let success):
-                    self.show = success.results.randomElement()
+                case .success(let topRatedShows):
+                    self.show = topRatedShows.results.randomElement()
+//                    print(topRatedShows)
+                    print("1 - top rated films fetched")
                     self.semaphore.signal()
                 case .failure(let err):
                     print(err)
@@ -51,6 +52,8 @@ class ViewController: UIViewController {
                 switch similarShowsResult {
                 case .success(let similars):
                     self.tvShows = similars
+//                    print(similars)
+                    print("2 - fetched silimar of random top rated film ")
                     self.semaphore.signal()
                 case .failure(let error):
                     print(error)
@@ -64,8 +67,9 @@ class ViewController: UIViewController {
             self.semaphore.wait()
             self.tvShowFetch.fetchMovies(from: .id("\(self.tvShows!.results.randomElement()!.id)"), afterID: nil) { (detailsResponse: Result<TVShowDetails, Error>) in
                 switch detailsResponse {
-                case .success(let success):
-                    print(success)
+                case .success(let details):
+                    print("3 - details of random tvshow from top rated film similars ")
+//                    print(details)
                     self.semaphore.signal()
                 case .failure(let err):
                     print(err)
